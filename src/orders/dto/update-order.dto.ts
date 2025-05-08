@@ -13,5 +13,4 @@ export class UpdateOrderDto {
     message: `Possible status values are: ${OrderStatusList.join(', ')}`
   })
   status: OrderStatus;
-
 }
