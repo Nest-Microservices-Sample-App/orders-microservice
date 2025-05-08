@@ -10,8 +10,6 @@ interface EnvVars {
 const envsSchema = joi.object({
     PORT: joi.number().required(),
     DATABASE_URL: joi.string().required(),
-    PORDUCTS_MICROSERVICE_HOST: joi.string().required(),
-    PRODUCTS_MICROSERVICE_PORT: joi.number().required(),
 
     NATS_SERVERS: joi.array().items(joi.string()).required(),
 }).unknown(true);
